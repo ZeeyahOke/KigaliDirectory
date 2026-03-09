@@ -150,8 +150,8 @@ lib/
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/kigali-directory.git
-cd kigali-directory
+git clone https://github.com/ZeeyahOke/KigaliDirectory
+cd KigaliDirectory
 ```
 
 ### Step 2: Set Up Firebase
@@ -159,8 +159,7 @@ cd kigali-directory
 2. Enable **Email/Password** authentication under Authentication → Sign-in method
 3. Create a **Cloud Firestore** database (start in test mode or deploy the included `firestore.rules`)
 4. Register your Android app and download `google-services.json` → place it in `android/app/`
-5. Register your iOS app and download `GoogleService-Info.plist` → place it in `ios/Runner/`
-6. Install FlutterFire CLI and run:
+5. Install FlutterFire CLI and run:
    ```bash
    dart pub global activate flutterfire_cli
    flutterfire configure --project=YOUR_PROJECT_ID
@@ -169,7 +168,7 @@ cd kigali-directory
 
 ### Step 3: Configure Google Maps
 1. Go to [Google Cloud Console](https://console.cloud.google.com)
-2. Enable the **Maps SDK for Android** and **Maps SDK for iOS**
+2. Enable the **Maps SDK for Android** 
 3. Create an API key
 
 **Android** — Add to `android/app/src/main/AndroidManifest.xml`:
@@ -177,11 +176,6 @@ cd kigali-directory
 <meta-data
     android:name="com.google.android.geo.API_KEY"
     android:value="YOUR_GOOGLE_MAPS_API_KEY"/>
-```
-
-**iOS** — Add to `ios/Runner/AppDelegate.swift`:
-```swift
-GMSServices.provideAPIKey("YOUR_GOOGLE_MAPS_API_KEY")
 ```
 
 ### Step 4: Deploy Firestore Rules & Indexes
@@ -212,8 +206,6 @@ This index is defined in `firestore.indexes.json` and will be auto-created when 
 ---
 
 ## Screenshots
-
-*Add screenshots here after running the app*
 
 | Login | Directory | Detail + Map | My Listings |
 |-------|-----------|-------------|-------------|
