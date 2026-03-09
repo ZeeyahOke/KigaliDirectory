@@ -213,8 +213,6 @@ This index is defined in `firestore.indexes.json` and will be auto-created when 
 
 ## Screenshots
 
-*Add screenshots here after running the app*
-
 | Login | Directory | Detail + Map | My Listings |
 |-------|-----------|-------------|-------------|
 | ![Login](screenshots/login.png) | ![Directory](screenshots/directory.png) | ![Detail](screenshots/detail.png) | ![My Listings](screenshots/my_listings.png) |
